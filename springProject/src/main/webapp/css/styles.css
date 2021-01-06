@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body {
+	font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+	/* font-family: 'Sunflower', sans-serif; */
+	text-align: center;
+}
+
+
+tr.second {
+	height: 400px;
+}
+
+td.left {
+	width: 300px;
+}
+
+
+a:link {
+	color: black;
+	text-decoration: none;
+}
+
+a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: green;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:active {
+	color: black;
+	text-decoration: none;
+}
+
+.atag {
+	text-align: center;
+}

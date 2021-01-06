@@ -1,0 +1,51 @@
+@charset "UTF-8";
+.row {
+	margin: 15px 0;
+}
+
+.checked {
+  color: orange;
+}
+
+.review {
+	margin: 0 15px;
+	border: 1px solid #EBEBEB;
+}
+.review-part{
+	margin-bottom: 10px;
+	
+}
+
+.modalView-part {
+	text-align: center;
+	margin: 15px 5px;
+}
+.modalViewImg {
+ 	display: inline-block;
+ 	
+}
+#inner-row{
+	display: flex;
+}
+
+#reviewImg-Div{
+	display: block;
+}
+
+#review-score {
+	text-align: center;
+	
+}
+
+#review-content span {
+	height: 120px;
+	white-space: pre-wrap;
+	font-size: 14px;
+	line-height: 1.4;
+	max-height: 7.0em;
+	overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+
+}

@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+th,td{
+	padding : 5px;
+}
+
+#logintable{
+/* 	background-color:rgba(192,192,192,0.2);*/	
+	border: 1px soild;
+	spacing: 0px;
+}
