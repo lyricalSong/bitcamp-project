@@ -1,0 +1,514 @@
+@charset "UTF-8";
+/* 게시글 뷰 */
+.container {
+  padding: 5px 120px 10px 120px;
+}
+div {
+    display: block;
+}
+.plain-btn { /* 버튼 */
+    border: 1px solid #d4d4d4;
+    display: inline-block;
+    padding: 10px;
+    width : auto;
+    line-height: 9px;
+    font-size: inherit;
+    text-align: center;
+    background-color : white;
+    color: black;
+    cursor: pointer;
+    vertical-align: baseline;
+}
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+.page-body{
+	min-height : 100%;
+	position:relative;
+	padding: 0px 400px;
+}
+
+.view-upper {
+	padding : 10px 0px;
+	border-bottom: 1px solid #efefef;
+}
+
+.view-upper .area_l {
+    float: left;
+}
+.view-upper .area_r {
+    float: right;
+
+}
+.read_tit {
+   	position: relative;
+    margin-top: 30px;
+    padding-right: 110px;
+}
+.read_tit .tit_info {
+    display: block;
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 1.4;
+}
+
+.view_stat {
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+div.view_stat div.info {
+    margin-left: 105px;
+    position: relative;
+    border-left: 1px solid #ddd;
+}
+
+div.view_stat div.mphoto {
+    width: 105px;
+    height: 103px;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+div.view_stat div.mphoto {
+    display: inline;
+    height: 100%;
+    max-width: 100%;
+    vertical-align: bottom;
+    background: url( "/FoodFighter/resources/img/community/boardImg/simbol.png" ) no-repeat center;
+}
+
+div.view_stat div.mphoto img{
+    display: inline;
+    height: 100%;
+    max-width: 100%;
+    vertical-align: bottom;
+    background: url( "/FoodFighter/resources/img/community/boardImg/simbol.png" ) no-repeat center;
+}
+
+div.view_stat div.info h1 {
+    display: block;
+    line-height: 0px;
+    margin : 15px 0px 7px 0px;
+    padding: 15px 20px 30px 20px ;
+    height: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+div.view_stat div.info h1 .subject {
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+    float: left;
+    display: block;
+}
+
+div.view_stat div.info p {
+	margin : 0px 0px 4px 4px;
+    padding: 16px 17px;
+    height: 12px;
+    line-height: 0px;
+    color: #b2b2b2;
+    position: relative;
+}
+
+div.view_stat div.info p span {
+    float: left;
+    height: 12px;
+    font-size: 14px;
+}
+
+div.view_stat div.info p .name {
+    font-weight: bold;
+    color: #000;
+}
+
+div.view_stat div.info p span.date {
+    padding-left: 8px;
+}
+div.view_stat div.info p span.hit {
+    padding-left: 8px;
+}
+div.view_stat div.info p span.comment {
+    padding-left: 8px;
+}
+/* 게시글 컨텐츠 div */
+.clear{
+	clear: both !important;
+}
+
+.viewbox {
+    border-top: 0;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    width: 100%;
+}
+.viewbox div.content {
+    padding: 30px 20px 15px 20px;
+    line-height: 20px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.viewbox div.content p {
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+.viewbox div.content .attach {
+	margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* 댓글 */
+.cont_recommendation {
+    margin: 27px 0 0px;
+    clear :both;
+}
+.cmt_num {
+	margin-left : 6px;
+	color : #FF6A4D;
+}
+.cmt_num:hover {
+	color : #FF6A4D;
+	text-decoration: none;
+}
+.cont_comment {
+    background-color: #f8f8f8;
+    border : 1px solid #ddd;
+}
+
+.cont_comment .comment_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 35px;
+    clear : both;
+}
+
+.comment_list li {
+    position: relative;
+    padding: 20px 0 20px 68px;
+    border-bottom: 1px solid #f1f1f1;
+    padding-right: 35px;
+}
+
+.pic {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 0;
+    top: 22px;
+    overflow: hidden;
+    border-radius: 24px;
+    background: url( "/FoodFighter/resources/img/community/boardImg/simbol.png" ) no-repeat center;
+    background-size: 48px auto;
+}
+.pic img {
+    width: 48px;
+    height: 48px;
+}
+
+.comment_list li .info {
+    display: table-cell;
+    width: 92.64%;
+    margin-top: -2px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.info .comment_post {
+    padding-right: 100px;
+}
+
+.comment_list li .info .data {
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+}
+
+.comment_list li .info .txt_name {
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+    line-height: 21px;
+    display: inline-block;
+}
+
+.txt_date {
+    font-size: 14px;
+    color: #ccc;
+    float: left;
+    margin-left: 10px;
+    line-height: 25px;
+}
+
+.comment_list li .info .comment_cont {
+    font-size: 14px;
+    line-height: 20px;
+    float: left;
+    width: 100%;
+    word-break: break-word;
+    padding-right: 10px;
+    box-sizing: border-box;
+    margin-top: 7px;
+    color: #333;
+}
+
+.comment_reply {
+	float: right;
+    top: 18px;
+    right: 50px;
+    color: #666;
+}
+.comment_reply a {
+    color: #666;
+    margin-right: 15px;
+    vertical-align: top;
+}
+
+.option {
+	display: table-cell !important;
+}
+.dropdown {
+	float: right;
+	border-color: none;
+}
+.dropdown-toggle {
+	border : 0;
+	background-color: #f8f8f8;
+}
+.open>.dropdown-menu {
+    display: table !important;
+}
+.dropdown-menu {
+	text-align : center !important;
+    min-width : 20px !important;
+    height: 56px !important;
+    cursor: pointer !important;
+}
+.dropdown-menu .a {
+	margin: 20px;
+	font-size : 20px;
+}
+.dropdown-menu li{
+    position: relative;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 0px 0 0px 0px;
+    border-bottom: 1px solid #f1f1f1;
+ }
+.dropdown-menu li {
+   position: relative;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 0px 0 0px 0px;
+    border-bottom: 1px solid #f1f1f1;
+ }
+.ico_more {
+	width: 20px;
+    height: 20px;
+    background: url( "/FoodFighter/resources/img/community/boardImg/more.svg" ) no-repeat center;
+}
+
+#secret {
+	font-size: 14px;
+    line-height: 21px;
+    display: inline-block;
+}
+
+.secretIcon {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 11px;
+    bottom : 5px;
+    overflow: hidden;
+    border-radius: 24px;
+    background-size: 48px auto;
+}
+
+.ico_lock {
+	margin-top : 10px;
+	width: 28px;
+    height: 28px;
+}
+
+/* 댓글 페이징 */
+.simple_paging {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.simple_paging a {
+    border: 1px solid #d4d4d4;
+    display: inline-block;
+    width: 26px;
+    height: 29px;
+    font-size: inherit;
+    text-align: center;
+    line-height: 26px;
+    color: black;
+    margin: 0px 3px;
+    cursor: pointer;
+}
+.simple_paging a.now, .simple_paging a:hover{
+    border: 1px solid #343434;
+    background: #666;
+    color: #fff;
+    letter-spacing: -1px;
+}
+
+/* 댓글 작성 */
+.cont_comment .comment_write {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0 30px;
+}
+
+.comment_modify { /* 댓글 수정 */
+    margin-top: 25px;
+}
+
+.cont_comment .inner_text_write {
+    border-color: #efefef;
+    background-color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    padding: 10px 10px 10px 10px;
+    border-radius: 2px;
+}
+.box_textarea textarea {
+	width: 100%;
+    height: 86px;
+    padding: 0;
+    border: 0;
+    font-size: 13px;
+    background-color: rgba(0,0,0,0);
+    resize: none;
+    vertical-align: top;
+    color:#444444;
+}
+.wrap_menu {
+    margin-top: 3px;
+}
+
+.wrap_menu:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.wrap_menu .area_l {
+	float : left;
+}
+.wrap_menu .area_r {
+    float: right;
+}
+
+.btnTab {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 4px;
+	padding: 0px;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+}
+.ico_bbs {
+    display: inline-block;
+    vertical-align: top;
+    text-indent: -9999px;
+}
+
+.sr_only { /* 글자수 */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0px, 0px, 0px, 0px);
+    padding: 0px;
+    margin: -1px;
+    overflow: hidden;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+}
+
+.num_text {
+    display: inline-block;
+    margin: 10px 0 0 3px;
+    font-size: 11px;
+    vertical-align: top;
+    color: #666;
+}
+
+.num_text .num_count{
+    color: black;
+}
+
+.btn_item {
+    margin: 0px 0px 0px 6px;
+}
+.ico_lock_state {
+	width: 18px;
+    height: 21px;
+    background: url( "/FoodFighter/resources/img/community/boardImg/lock_state.svg" ) no-repeat center;
+}
+.ico_lock_on {
+	width: 18px;
+    height: 21px;
+    background: url( "/FoodFighter/resources/img/community/boardImg/lock_on.svg" ) no-repeat center;
+}
+
+.btn_group {
+    display: inline-block;
+    margin-left: 6px;
+}
+
+/* 대댓 작성 */
+.reply_section {
+    position: relative;
+    padding: 25px 0 20px 68px;
+    margin-top: 10px;
+}
+.reply_section .info {
+    display: table-cell;
+    width: 92% !important;
+    margin-top: -2px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.comment_replyWrite{
+    padding-top: 25px;
+}
+.comment_replyWrite .inner_text_write {
+    border-color: #efefef;
+    border: 1px solid #efefef;
+    padding: 10px 10px 10px 16px;
+    background-color: #fff;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    border-radius: 2px;
+}
